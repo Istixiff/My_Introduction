@@ -54,5 +54,5 @@ with st.container():
     st.write("##")
     st.write(" - My Discord - Semi.s")
     st.write(" - My Phone Number - [719-309-8271](tel:7193098271)")
-    st.write(" - My Email - istixifpdr@gmail.com")
+    st.write(" - My Email - istixifpdr@gmail.com(istixifpdr@gmail.com)")
     
