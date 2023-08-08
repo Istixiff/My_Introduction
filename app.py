@@ -137,3 +137,11 @@ with st.container():
     # Add debugging logging statements
     logging.debug("Ways to Contact Me section rendered")
 
+    with left_column:
+        st.markdown(contact_form, unsafe_allow_html=True)
+    with right_column:
+        st.empty()
+
+    # Add debugging logging statements
+    logging.debug("Ways to Contact Me section rendered")
+
