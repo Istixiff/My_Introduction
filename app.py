@@ -136,3 +136,4 @@ with st.container():
 
     # Add debugging logging statements
     logging.debug("Ways to Contact Me section rendered")
+
