@@ -22,6 +22,12 @@ def load_lottieurl(url):
         return None
     return r.json()
 
+def load_lottieurl2(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
@@ -29,6 +35,7 @@ def local_css(file_name):
 local_css("style/style.css")
 
 lottie_coding = load_lottieurl("https://lottie.host/4490a729-248a-48df-897e-9f6b19627935/oDQNLZfAsV.json")
+lottie_coding2 = load_lottieurl2("https://lottie.host/e9fe6ce2-66e5-46c9-b0fd-a936d844685c/ib0WotdAuY.json")
 
 # Custom CSS to set background image
 background_style = """
@@ -58,10 +65,14 @@ logging.debug("Lottie animation loaded successfully")
 
 # Projects Section
 with st.container():
-    st.write("---")
-    st.header("My Projects")
-    st.write("##")
-    st.write(" - I don't have any projects as of right now")
+    left_column, right_column = st.columns(2)
+    with left_column:
+        st.write("---")
+        st.header("My Projects")
+        st.write("##")
+        st.write(" - I don't have any projects as of right now")
+    with right_column:
+        st_lottie(lottie_coding2, height=300, key="coding2")
 
 # Connections Section
 with st.container():
@@ -141,4 +152,3 @@ with st.container():
 
     # Add debugging logging statements
     logging.debug("Ways to Contact Me section rendered")
-
