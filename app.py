@@ -9,7 +9,12 @@ st.experimental_set_query_params(debug=True)
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
 
-st.set_page_config(page_title="My Introduction", page_icon=":tada:", layout="wide")
+# Set custom page icon (favicon)
+st.set_page_config(
+    page_title="My Introduction",
+    page_icon="icons/semi.png",  # Replace with the actual path to your icon
+    layout="wide"
+)
 
 def load_lottieurl(url):
     r = requests.get(url)
@@ -136,3 +141,4 @@ with st.container():
 
     # Add debugging logging statements
     logging.debug("Ways to Contact Me section rendered")
+
