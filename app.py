@@ -70,7 +70,7 @@ with st.container():
 
     # Button styles
     button_style = (
-        "background-color: #010101; color: white; border: none; border-radius: 5px; "
+        "background-color: #D32F2F; color: white; border: none; border-radius: 5px; "
         "width: 150px; height: 35px; display: flex; align-items: center; justify-content: center;"
     )
 
