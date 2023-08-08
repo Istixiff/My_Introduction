@@ -61,7 +61,7 @@ with st.container():
     st.write("---")
     st.header("My Projects")
     st.write("##")
-    st.write(" - I don't have any projects as of right now.")
+    st.write(" - I don't have any projects as of right now")
 
 # Connections Section
 with st.container():
