@@ -135,9 +135,9 @@ with st.container():
     st.write(" - My Email")
 
     # Contact form
-    contact_form = """
-        <form action="https://formsubmit.co/istixifpdr@gmail.com" method="POST">
-            <input type="hidden" name="_captcha" value="false">
+    form_action = "https://formspree.io/f/mleyjdpb"  # Replace with your Formspree form endpoint
+    contact_form = f"""
+        <form action="{form_action}" method="POST">
             <input type="text" name="name" placeholder="Your name" required>
             <input type="email" name="email" placeholder="Your email" required>
             <textarea name="message" placeholder="Your message here" required></textarea>
